@@ -7,3 +7,8 @@
   .content > img {
     width: 100%;
   }
+
+  .item{
+    color: green;
+    font-size: 20px;
+  }
