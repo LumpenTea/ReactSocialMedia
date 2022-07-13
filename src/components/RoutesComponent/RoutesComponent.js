@@ -8,15 +8,14 @@ import Settings from '../Settings/Settings';
 
 const RoutesComponent = () => {
     return (
-        <BrowserRouter>
-            <Routes>
-                <Route path='/dialogs' element={<Dialogs />} />
-                <Route path='/profile' element={<Profile />} />
-                <Route path='/news' element={<News />} />
-                <Route path='/music' element={<Music />} />
-                <Route path='/settings' element={<Settings />} />
-            </Routes>
-        </BrowserRouter>
+        <Routes>
+            <Route path='/dialogs' element={<Dialogs />} />
+            <Route path='/profile' element={<Profile />} />
+            <Route path='/news' element={<News />} />
+            <Route path='/music' element={<Music />} />
+            <Route path='/settings' element={<Settings />} />
+        </Routes>
+
     )
 }
 

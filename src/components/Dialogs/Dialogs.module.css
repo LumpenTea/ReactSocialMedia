@@ -1,0 +1,24 @@
+.dialogs{
+    display: grid;
+    grid-template: 1fr / 200px 1fr;
+    font-size: 20px;
+}
+
+.dialogs_users{
+    grid-column: 1;
+    padding: 10px;
+    border-right: 1px solid black;
+}
+
+.dialogs_messages{
+    grid-column: 2;
+    padding: 10px;
+}
+
+.users_active{
+    color: blue;
+}
+
+.users_item{
+    color: black;
+}
