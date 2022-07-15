@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import styles from './Dialogs.module.css';
+import styles from '../Dialogs.module.css';
 
 const Dialog = ({ user, id }) => {
     return (
