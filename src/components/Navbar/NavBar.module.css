@@ -1,14 +1,16 @@
 .nav {
     grid-column: 1;
-    grid-row: 2;
-    background-color: burlywood;
+    grid-row: 3;
+    background-color: #feffec;
+    border: 2px solid #be9b7b;
     font-size: 24px;
+    text-align: center;
 }
 
 .item{
-    color: white;
+    color: #be9b7b;
 }
 
 .active{
-    color: blueviolet;
+    color: c;
 }

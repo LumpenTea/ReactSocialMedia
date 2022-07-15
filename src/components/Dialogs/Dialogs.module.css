@@ -8,6 +8,7 @@
     grid-column: 1;
     padding: 10px;
     border-right: 1px solid black;
+    
 }
 
 .dialogs_messages{
@@ -15,10 +16,10 @@
     padding: 10px;
 }
 
-.users_active{
-    color: blue;
+.users_item{
+    color: #be9b7b;
 }
 
-.users_item{
-    color: black;
+.users_active{
+    color: #3c2f2f;
 }

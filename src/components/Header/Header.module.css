@@ -1,7 +1,7 @@
 .header {
-    grid-column: span 2;
-    border: 1px solid black;
-    background-color: green;
+    grid-column: span 3;
+    border: 2px solid #e7dac3;
+    background-color: #fffdd2;
   }
   
   .header img {
