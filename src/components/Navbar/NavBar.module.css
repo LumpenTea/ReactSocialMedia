@@ -2,15 +2,18 @@
     grid-column: 1;
     grid-row: 3;
     background-color: #feffec;
-    border: 2px solid #be9b7b;
+    border: 2px solid #e7dac3;
+    padding: 20px;
     font-size: 24px;
     text-align: center;
 }
 
 .item{
     color: #be9b7b;
+    text-decoration: none;
 }
 
 .active{
-    color: c;
+    color: #3c2f2f;
+    text-decoration: none;
 }

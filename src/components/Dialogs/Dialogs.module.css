@@ -6,8 +6,8 @@
 
 .dialogs_users{
     grid-column: 1;
-    padding: 10px;
-    border-right: 1px solid black;
+    padding: 20px;
+    border-right: 2px solid #e7dac3;
     
 }
 
@@ -18,8 +18,10 @@
 
 .users_item{
     color: #be9b7b;
+    text-decoration: none;
 }
 
 .users_active{
     color: #3c2f2f;
+    text-decoration: none;
 }
