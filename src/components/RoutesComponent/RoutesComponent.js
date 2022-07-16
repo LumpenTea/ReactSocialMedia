@@ -6,11 +6,11 @@ import News from '../News/News';
 import Profile from '../Profile/Profile';
 import Settings from '../Settings/Settings';
 
-const RoutesComponent = ({postsData, dialogsData, messagesData}) => {
+const RoutesComponent = ({state}) => {
     return (
         <Routes>
-            <Route path='/dialogs/*' element={<Dialogs dialogsData={dialogsData} messagesData={messagesData} />} />
-            <Route path='/profile' element={<Profile postsData={postsData} />} />
+            <Route path='/dialogs/*' element={<Dialogs dialogPage={state.messagesPage} />} />
+            <Route path='/profile' element={<Profile profilePage={state.profilePage} />} />
             <Route path='/news/*' element={<News />} />
             <Route path='/music/*' element={<Music />} />
             <Route path='/settings/*' element={<Settings />} />

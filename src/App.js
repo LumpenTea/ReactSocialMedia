@@ -4,14 +4,14 @@ import Header from './components/Header/Header';
 import NavBar from './components/Navbar/NavBar';
 import RoutesComponent from './components/RoutesComponent/RoutesComponent';
 
-const App = ({postsData, dialogsData, messagesData}) => {
+const App = ({state}) => {
   return (
     <BrowserRouter>
       <div className='app-wrapper'>
         <Header />
         <NavBar />
         <div className='app-wrapper_content'>
-          <RoutesComponent postsData={postsData} dialogsData={dialogsData} messagesData={messagesData} />
+          <RoutesComponent state={state} />
         </div>
       </div>
     </BrowserRouter>

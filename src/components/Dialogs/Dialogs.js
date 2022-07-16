@@ -3,10 +3,10 @@ import Dialog from './DialogItem/DialogItem';
 import styles from './Dialogs.module.css';
 import Message from './Message/Message';
 
-const Dialogs = ({dialogsData, messagesData}) => {
+const Dialogs = ({dialogPage}) => {
 
-  let dialogs = dialogsData.map(value => <Dialog user={value.user} id={value.id} />);
-  let messages = messagesData.map(value => <Message message={value.message} likeCount={value.likeCount} />);
+  let dialogs = dialogPage.dialogsData.map(value => <Dialog user={value.user} id={value.id} />);
+  let messages = dialogPage.messagesData.map(value => <Message message={value.message} likeCount={value.likeCount} />);
 
   return (
     <div className={styles.dialogs}>
