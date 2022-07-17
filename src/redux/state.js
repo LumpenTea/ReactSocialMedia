@@ -1,6 +1,9 @@
 const state = {
     sideBar: {
-       navItems: ['profile', 'messages', 'news', 'music', 'settings', 'friends']
+       navItems: ['profile', 'messages', 'news', 'music', 'settings', 'friends'],
+       friendsOnline: ['https://media.istockphoto.com/photos/portrait-of-creative-trendy-black-african-male-designer-laughing-picture-id1296158947?k=20&m=1296158947&s=612x612&w=0&h=qh89sBTcLTUuuOZMMUwMrbfnWqERRyZch9R6Z74S9Lc=',
+        'https://media.istockphoto.com/photos/portrait-of-handsome-latino-african-man-picture-id1007763808?k=20&m=1007763808&s=612x612&w=0&h=q4qlV-99EK1VHePL1-Xon4gpdpK7kz3631XK4Hgr1ls=', 
+        'https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGVyc29ufGVufDB8fDB8fA%3D%3D&w=1000&q=80']
     },
     profilePage: {
         postsData: [
@@ -20,9 +23,16 @@ const state = {
         messagesData: [
             { message: 'Hi', likeCount: 10 },
             { message: 'How are you', likeCount: 5 },
-            { message: 'Oh yeah!', likeCount: 10 }
+            { message: 'I am great!', likeCount: 10 }
         ]
     }
+}
+
+export let addPost = (post) => {
+    state.profilePage.postsData.push({
+        message: post,
+        likesCount: 0
+    })
 }
 
 export default state;

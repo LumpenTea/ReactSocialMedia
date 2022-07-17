@@ -1,8 +1,12 @@
 .message {
     width: fit-content;
-    color: #be9b7b;
     border: 1px solid #be9b7b;
     border-radius: 15%;
+}
+
+.message_text{
+    padding: 10px;
+    color: #be9b7b;
 }
 
 .message_right {

@@ -2,7 +2,7 @@
 
 .dialogs {
     display: grid;
-    grid-template: 1fr / 200px 1fr;
+    grid-template: 1fr / 185px 1fr;
     font-size: 20px;
 }
 

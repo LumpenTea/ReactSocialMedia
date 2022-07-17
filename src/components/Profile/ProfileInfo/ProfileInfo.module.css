@@ -1,0 +1,14 @@
+.item {
+    color: #be9b7b;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.backgroundImg{
+    width: 98%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&w=1080&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb);
+    margin: 10px;
+  }

@@ -1,6 +1,6 @@
 .nav {
     grid-column: 1;
-    grid-row: 3 / 5;
+    grid-row: 2 / 4;
     height: fit-content;
     background-color: #feffec;
     border: 2px solid #e7dac3;
@@ -22,16 +22,6 @@
     color: #be9b7b;
     text-decoration: none;
     margin-top: 65px;
-}
-
-.item_friends img {
-    width: 45px;
-    height: 45px;
-    margin-top: 10px;
-    margin-left: 2px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 2px solid #be9b7b;
 }
 
 .active {

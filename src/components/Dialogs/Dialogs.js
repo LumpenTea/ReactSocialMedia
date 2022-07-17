@@ -1,6 +1,7 @@
 import React from 'react';
 import Dialog from './DialogItem/DialogItem';
 import styles from './Dialogs.module.css';
+import InputBar from './InputBar/InputBar';
 import Message from './Message/Message';
 
 const Dialogs = ({messagesPage}) => {
@@ -15,6 +16,7 @@ const Dialogs = ({messagesPage}) => {
       </div>
       <div className={`${styles.dialogs_messages} mt-auto`}>
         {messages}
+        <InputBar />
       </div>
     </div>
   )

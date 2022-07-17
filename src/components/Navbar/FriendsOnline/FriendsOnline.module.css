@@ -1,0 +1,9 @@
+.friendOnline {
+    width: 45px;
+    height: 45px;
+    margin-top: 10px;
+    margin-left: 2px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #be9b7b;
+}
