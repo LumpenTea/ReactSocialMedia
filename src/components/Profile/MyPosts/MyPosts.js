@@ -9,7 +9,7 @@ const MyPosts = ({ postsData, style }) => {
             <div className={style.item}>
                 <textarea></textarea>
                 <div>
-                    <button>Add Post</button>
+                    <button className='btn btn-success'>Add Post</button>
                 </div>
             </div>
             {posts}

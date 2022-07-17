@@ -1,0 +1,28 @@
+.dialogs_avatar {
+    width: 45px;
+    height: 45px;
+    margin-top: 10px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #be9b7b;
+}
+
+.users_item {
+    color: #be9b7b;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.users_item:hover {
+    color: #3c2f2f;
+}
+
+.users_active {
+    color: #3c2f2f;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.users_active:hover {
+    color: #3c2f2f;
+}

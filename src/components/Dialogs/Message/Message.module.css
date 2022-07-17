@@ -1,0 +1,17 @@
+.message {
+    width: fit-content;
+    color: #be9b7b;
+    border: 1px solid #be9b7b;
+    border-radius: 15%;
+}
+
+.message_right {
+    margin-right: 0;
+    margin-left: auto;
+
+}
+
+.message_left {
+    margin-right: auto;
+    margin-left: 0;
+}

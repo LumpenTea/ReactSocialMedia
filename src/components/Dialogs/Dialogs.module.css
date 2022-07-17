@@ -1,27 +1,18 @@
-.dialogs{
+/* Dialogs */
+
+.dialogs {
     display: grid;
     grid-template: 1fr / 200px 1fr;
     font-size: 20px;
 }
 
-.dialogs_users{
+.dialogs_users {
     grid-column: 1;
     padding: 20px;
     border-right: 2px solid #e7dac3;
-    
 }
 
-.dialogs_messages{
+.dialogs_messages {
     grid-column: 2;
     padding: 10px;
-}
-
-.users_item{
-    color: #be9b7b;
-    text-decoration: none;
-}
-
-.users_active{
-    color: #3c2f2f;
-    text-decoration: none;
 }

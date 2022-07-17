@@ -2,7 +2,7 @@
   display: grid;
   width: 1200px;
   margin: 0 auto;
-  grid-template: 60px 20px 1fr / 200px 20px 1fr;
+  grid-template: 60px 20px 1fr 1fr / 200px 20px 1fr;
 }
 
 .app-wrapper_content {
