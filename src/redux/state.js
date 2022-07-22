@@ -39,7 +39,7 @@ export let store = {
     subscribe(observer) {
         this._RenderEntireTree = observer;
     },
-    dispatch(action, param) {
+    dispatch(action) {
         switch (action.type) {
             case 'ADD-POST':
                 this._state.profilePage.postsData.push({
@@ -49,7 +49,7 @@ export let store = {
                 this._state.profilePage.postTextValue = '';
                 this._RenderEntireTree(this._state);
             case 'TEXT-CHANGE':
-                this._state.profilePage.postTextValue = param;
+                this._state.profilePage.postTextValue = action.text;
                 this._RenderEntireTree(this._state);
             case 'ADD-MESSAGE':
                 this._state.messagesPage.messagesData.push({
@@ -59,7 +59,7 @@ export let store = {
                 this._state.messagesPage.messageValue = '';
                 this._RenderEntireTree(this._state);
             case 'MESSAGE-CHANGE':
-                this._state.messagesPage.messageValue = param;
+                this._state.messagesPage.messageValue = action.text;
                 this._RenderEntireTree(this._state);
         }
     }

@@ -11,7 +11,7 @@ const InputBar = ({ value, dispatch }) => {
     }
 
     const inputChange = () => {
-        dispatch({type: 'MESSAGE-CHANGE'}, message.current.value);
+        dispatch({type: 'MESSAGE-CHANGE', text: message.current.value});
     }
 
     return (

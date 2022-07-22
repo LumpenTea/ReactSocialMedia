@@ -8,6 +8,7 @@
 .send_input{
     grid-column: 1;
     border: 1px solid #be9b7b;
+    color: #be9b7b;
 }
 
 .send_input:focus{
