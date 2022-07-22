@@ -7,11 +7,11 @@ import News from '../News/News';
 import Profile from '../Profile/Profile';
 import Settings from '../Settings/Settings';
 
-const RoutesComponent = ({ state, addPost }) => {
+const RoutesComponent = ({ state, dispatch }) => {
     return (
         <Routes>
-            <Route path='/messages/*' element={<Dialogs messagesPage={state.messagesPage} />} />
-            <Route path='/profile' element={<Profile profilePage={state.profilePage} addPost={addPost} />} />
+            <Route path='/messages/*' element={<Dialogs messagesPage={state.messagesPage} dispatch={dispatch} />} />
+            <Route path='/profile' element={<Profile profilePage={state.profilePage} dispatch={dispatch} />} />
             <Route path='/news/*' element={<News />} />
             <Route path='/music/*' element={<Music />} />
             <Route path='/settings/*' element={<Settings />} />

@@ -1,17 +1,25 @@
 import React from 'react'
 import styles from './InputBar.module.css'
 
-const InputBar = () => {
+const InputBar = ({ value, dispatch }) => {
 
     let message = React.createRef();
 
-    let newMessage = () => {
-        alert(message.current.value);
+    const newMessage = () => {
+        dispatch({type: 'ADD-MESSAGE'});
+        message.current.value = '';
+    }
+
+    const inputChange = () => {
+        dispatch({type: 'MESSAGE-CHANGE'}, message.current.value);
     }
 
     return (
         <div className={styles.send}>
-            <input ref={message} className={styles.send_input}></input>
+            <input onChange={() => inputChange()} 
+                ref={message} 
+                className={styles.send_input}
+                value={value} />
             <button onClick={newMessage} className='btn btn-success'>Send</button>
         </div>
     )

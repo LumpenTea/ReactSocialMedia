@@ -1,5 +1,37 @@
 .item {
-    color: #be9b7b;
     font-size: 20px;
+    margin: 10px;
     padding: 10px;
+    margin: 50px auto 20px auto;
+    width: 80%;
+}
+
+.item > textarea {
+    background-color: #f5f5f5;
+    border: 2px solid #be9b7b;
+    color: #be9b7b;
+    border-radius: 15px;
+    width: 100%;
+}
+
+textarea::placeholder {
+    color: #be9b7b;
+    padding: 10px;
+}
+
+textarea:focus{
+    outline: none !important;
+}
+
+.item_button > button{
+    width: 100%;
+    background-color: #e7dac3;
+    border: none;
+    border-radius: 5px;
+    color: #3c2f2f;
+}
+
+.item_button > button:hover{
+    background-color: #be9b7b;
+    color: #f5f5f5;
 }

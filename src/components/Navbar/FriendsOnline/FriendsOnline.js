@@ -4,7 +4,7 @@ import styles from './FriendsOnline.module.css'
 const FriendsOnline = ({ friendsOnline }) => {
     return (
         <div>
-            {friendsOnline.map(value => <img src={value} className={styles.friendOnline}></img>)}
+            {friendsOnline.map(value => <img src={value} key={value} className={styles.friendOnline}></img>)}
         </div>
     )
 }
