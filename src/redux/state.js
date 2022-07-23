@@ -1,3 +1,6 @@
+import dialogsReducer from "./dialogsReducer";
+import profileReducer from "./profileReducer";
+
 export let store = {
     _state: {
         sideBar: {
@@ -33,34 +36,15 @@ export let store = {
     getState() {
         return this._state;
     },
-    _RenderEntireTree() {
+    _callSubscriber() {
         console.log('Render changed');
     },
     subscribe(observer) {
-        this._RenderEntireTree = observer;
+        this._callSubscriber = observer;
     },
     dispatch(action) {
-        switch (action.type) {
-            case 'ADD-POST':
-                this._state.profilePage.postsData.push({
-                    message: this._state.profilePage.postTextValue,
-                    likesCount: 0
-                });
-                this._state.profilePage.postTextValue = '';
-                this._RenderEntireTree(this._state);
-            case 'TEXT-CHANGE':
-                this._state.profilePage.postTextValue = action.text;
-                this._RenderEntireTree(this._state);
-            case 'ADD-MESSAGE':
-                this._state.messagesPage.messagesData.push({
-                    message: this._state.messagesPage.messageValue,
-                    likesCount: 0
-                });
-                this._state.messagesPage.messageValue = '';
-                this._RenderEntireTree(this._state);
-            case 'MESSAGE-CHANGE':
-                this._state.messagesPage.messageValue = action.text;
-                this._RenderEntireTree(this._state);
-        }
+        profileReducer(this._state.profilePage, action);
+        dialogsReducer(this._state.messagesPage, action);
+        this._callSubscriber(this._state);
     }
 }

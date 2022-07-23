@@ -1,23 +1,20 @@
 import React from 'react'
+import { addMessageActionCreator, messageInputChangeActionCreator } from '../../../redux/dialogsReducer';
 import styles from './InputBar.module.css'
 
 const InputBar = ({ value, dispatch }) => {
 
-    let message = React.createRef();
-
     const newMessage = () => {
-        dispatch({type: 'ADD-MESSAGE'});
-        message.current.value = '';
+        dispatch(addMessageActionCreator());
     }
 
-    const inputChange = () => {
-        dispatch({type: 'MESSAGE-CHANGE', text: message.current.value});
+    const inputChange = (event) => {
+        dispatch(messageInputChangeActionCreator(event.target.value));
     }
 
     return (
         <div className={styles.send}>
-            <input onChange={() => inputChange()} 
-                ref={message} 
+            <input onChange={inputChange}  
                 className={styles.send_input}
                 value={value} />
             <button onClick={newMessage} className='btn btn-success'>Send</button>
